@@ -1,0 +1,188 @@
+{% extends "base.html" %} {% block title %}SIGN UP{% endblock%} {% block content
+%}
+<form method="POST">
+  <h3 align="center">SIGN UP</h3>
+  <div class="form-group">
+    <label for="email">Email Address</label>
+    <input
+      type="email"
+      class="form-control"
+      id="email"
+      name="email"
+      placeholder="Enter Your Email"
+    />
+  </div>
+  <div class="form-group">
+    <label for="FirstName">First Name</label>
+    <input
+      type="text"
+      class="form-control"
+      id="firstName"
+      name="firstName"
+      placeholder="Enter Your First Name"
+    />
+  </div>
+  <div class="form-group">
+    <label style="color:red;" ><b>Please Remember Your Choices, They Will Be Used To Create Your Password.</b></label><br />
+    <label for="sport">Choose the sport you like the most:</label>
+    <select name="sport" id="sport" class="form-control">
+      <option value="football">Football</option>
+      <option value="basketball">Basketball</option>
+      <option value="tennis">Tennis</option>
+      <option value="volleyball">Volleyball</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="outact">Choose the outdoor activity you like the most:</label>
+    <select name="outact" id="outact" class="form-control">
+      <option value="camping">Camping</option>
+      <option value="gardening">Gardening</option>
+      <option value="biking">Biking</option>
+      <option value="fishing">Fishing</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="inact">Choose the indoor activity you like the most:</label>
+    <select name="inact" id="inact" class="form-control">
+      <option value="reading">Reading</option>
+      <option value="painting">Painting</option>
+      <option value="cooking">Cooking</option>
+      <option value="coding">Coding</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="flower">Choose the flower you like the most:</label>
+    <select name="flower" id="flower" class="form-control">
+      <option value="rose">Rose</option>
+      <option value="hydrangea">Hydrangea</option>
+      <option value="lily">Lily</option>
+      <option value="sunflower">Sunflower</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="ftact">Choose the activity you prefer in your free time:</label>
+    <select name="ftact" id="ftact" class="form-control">
+      <option value="writing">Writing</option>
+      <option value="videoGaming">Video Gaming</option>
+      <option value="listenToMusic">Listen To Music</option>
+      <option value="watchTV">Watch TV</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="food">Choose the food you like the most:</label>
+    <select name="food" id="food" class="form-control">
+      <option value="tacos">Tacos</option>
+      <option value="sushi">Sushi</option>
+      <option value="pasta">Pasta</option>
+      <option value="burger">Burger</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="dessert">Choose the dessert you like the most:</label>
+    <select name="dessert" id="dessert" class="form-control">
+      <option value="cake">Cake</option>
+      <option value="iceCream">Ice Cream</option>
+      <option value="applePie">Apple Pie</option>
+      <option value="macaroons">Macaroons</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="drink">Choose the drink you like the most:</label>
+    <select name="drink" id="drink" class="form-control">
+      <option value="coffee">Coffee</option>
+      <option value="tea">Tea</option>
+      <option value="smoothie">Smoothie</option>
+      <option value="juice">Juice</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="cities">Choose the city you like the most:</label>
+    <select name="cities" id="cities" class="form-control">
+      <option value="paris">Paris</option>
+      <option value="newYorkCity">New York City</option>
+      <option value="london">London</option>
+      <option value="tokyo">Tokyo</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="place">Choose the place you like to visit:</label>
+    <select name="place" id="place" class="form-control">
+      <option value="museum">Museum</option>
+      <option value="beach">Beach</option>
+      <option value="forest">Forest</option>
+      <option value="amusementPark">Amusement Park</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="pet">Choose a pet you like the most:</label>
+    <select name="pet" id="pet" class="form-control">
+      <option value="cat">Cat</option>
+      <option value="dog">Dog</option>
+      <option value="fish">Fish</option>
+      <option value="bird">Bird</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="socapp">Choose an app you use the most:</label>
+    <select name="socapp" id="socapp" class="form-control">
+      <option value="instagram">Instagram</option>
+      <option value="youtube">YouTube</option>
+      <option value="tiktok">TikTok</option>
+      <option value="twitter">Twitter</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="craft">Choose a craft you prefer:</label>
+    <select name="craft" id="craft" class="form-control">
+      <option value="pottery">Pottery</option>
+      <option value="woodCrafts">Wood Crafts</option>
+      <option value="embroidery">Embroidery</option>
+      <option value="crochet">Crochet</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="scsub">Choose a subject you liked in school:</label>
+    <select name="scsub" id="scsub" class="form-control">
+      <option value="math">Math</option>
+      <option value="englishLang">English Language</option>
+      <option value="chemistry">Chemistry</option>
+      <option value="geography">Geography</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="transport">Choose a transportation method you liked when traveling:</label>
+    <select name="transport" id="transport" class="form-control">
+      <option value="car">Car</option>
+      <option value="plane">Plane</option>
+      <option value="train">Train</option>
+      <option value="ship">Ship</option>
+    </select>
+  </div>
+  <br />
+  <div class="form-group">
+    <h4 align="center">What do you see in this image?</h4>
+    <div align="center">
+      <img
+        id="ranObj"
+        src="data:image/jpeg;base64, {{ picname }} "
+        width="500"
+        height="300"
+      />
+    </div>
+    <br />
+    <div class="form-group">
+      <label for="objname"style="color:red;" ><b>Please Remember What You Enters.</b></label>
+      <input
+        type="text"
+        class="form-control"
+        id="objname"
+        name="objname"
+        placeholder="Enter what you see"
+      />
+    <br />
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+  <br />
+  <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+</form>
+{% endblock %}

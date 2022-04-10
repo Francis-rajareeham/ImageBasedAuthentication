@@ -1,0 +1,78 @@
+{% extends "base.html" %} {% block title %}LOGIN{% endblock%} {% block content %}
+<form method="POST">
+  <h3 align="center">LOGIN</h3>
+            <table borde="0" align="center" style="font-size: 25px;">   
+            <tr>
+            <td align="center" style="padding: 10px;"><img
+            id="A"
+            name="A"
+            src="data:image/jpeg;base64, {{ picname1 }} "
+            width="300"
+            height="200"
+          /><br />
+          <label for="A"><b>A</b></label>
+        </td>
+
+        <td align="center" style="padding: 10px;"><img
+            id="B"
+            name="B"
+            src="data:image/jpeg;base64, {{ picname2 }} "
+            width="300"
+            height="200"
+          /><br />
+          <label for="B"><b>B</b></label>
+        </td>
+          
+          <td align="center" style="padding: 10px;"><img
+            id="C"
+            name="C"
+            src="data:image/jpeg;base64, {{ picname3 }} "
+            width="300"
+            height="200"
+          /><br/>
+          <label for="C"><b>C</b></label>
+        </td></tr> 
+
+          <tr>
+            <td align="center" style="padding: 10px;"><img
+            id="D"
+            name="D"
+            src="data:image/jpeg;base64, {{ picname4 }} "
+            width="300"
+            height="200"
+          /><br />
+          <label for="D"><b>D</b></label>
+        </td>
+
+          <td align="center" style="padding: 10px;"><img
+            id="E"
+            name="E"
+            src="data:image/jpeg;base64, {{ picname5 }} "
+            width="300"
+            height="200"
+          /><br />
+          <label for="E"><b>E</b></label>
+        </td>
+
+          <td align="center" style="padding: 10px;"><img
+            id="F"
+            name="F"
+            src="data:image/jpeg;base64, {{ picname6 }} "
+            width="300"
+            height="200"
+          /><br />
+          <label for="F"><b>F</b></label>
+        </td>
+        </tr>
+        </table> 
+
+          <br />
+          <label for="intimg">Please enter the letter that represent the image where all the interests are related to you</label>
+          <input type="Password" class="form-control" id="intimg" name="intimg" placeholder="Enter Your Choice" maxlength="1"/>
+          <br />
+          <button name="btn" value="next2" type="submit" class="btn btn-primary">Next</button>
+          <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+      <br />
+
+</form>
+{% endblock %}

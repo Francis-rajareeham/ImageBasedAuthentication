@@ -1,0 +1,16 @@
+{% extends "base.html" %} {% block title %}LOGIN{% endblock%} {% block content %}
+<form method="POST">
+  <h3 align="center">LOGIN</h3>
+  <div class="form-group">
+    <label for="ranObj">Please enter the name of the object you saw on registeration</label>
+    <input type="Password" class="form-control" id="ranObj" name="ranObj" placeholder="Enter Your Object Name" />
+    <button name="btn" value="login" type="submit" class="btn btn-primary">Login</button>
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+
+
+
+    <br />
+</div>
+
+</form>
+{% endblock %}
